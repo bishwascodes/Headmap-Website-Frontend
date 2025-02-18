@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="left d-flex align-items-center">
+                    <figure>
+                        <a href="#">
+                            <img src="./assets/img/headmap_logo.png" alt="Logo">
+                        </a>
+                    </figure>
+                    <div class="mobile-menu d-none" id="menu-toggle">
+                        <i id="menu-toggle-icon" class="fa-solid fa-bars"></i>
+                    </div>
+                    <nav id="main-menu">
+                        <ul>
+                            <a href="#">
+                                <li>Headmap Magazine</li>
+                            </a>
+                            <a href="#">
+                                <li>For Individuals</li>
+                            </a>
+                            <a href="#">
+                                <li>For Companies</li>
+                            </a>
+                            <a href="#">
+                                <li>Headmap</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right d-flex justify-content-between align-items-center">
+                    <div class="search-box">
+                        <i id="search" class="fa-solid fa-search"></i>
+                        <div class="search-form">
+                            <form action="">
+                                <input placeholder="Search..." type="search" name="s">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-button">
+                        <a href="#">
+                            <button>Contact Us</button>
+                        </a>
+                    </div>
+                    <div class="language-selector">
+                        En <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 left">
+                        <h2>From psychology
+                            to growth</h2>
+                        <h6>Our team of psychologists will help you in personal but also career life on the road</h6>
+                        <div class="btn-group d-flex">
+                            <a href="#">
+                                <button class="btn btn-primary">Reserve Consultation</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-secondary">24 available terms in the following 30 days</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="nested-images-container d-flex">
+                            <div class="first-col align-self-center">
+                                <div class="team-member">
+                                    <img src="./assets/img/Simona Belovicova.png" alt="">
+                                    <div class="overlay">
+                                        <div class="signature">
+                                            <img src="./assets/img/hero_signature.png" alt="">
+                                        </div>
+                                        <h6>
+                                            Mgr. Simona
+                                            Belovicova, PhD.
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mid-col  align-self-end">
+                                <div class="team-member">
+                                    <img src="./assets/img/Diana Fekete.png" alt="">
+                                    <div class="overlay">
+                                        <div class="signature">
+                                            <img src="./assets/img/hero_signature.png" alt="">
+                                        </div>
+                                        <h6>
+                                            Mgr. Diana Fekete
+                                        </h6>
+                                    </div>
+
+                                </div>
+                                <div class="team-member">
+                                    <img src="./assets/img/Juraj Vido.png" alt="">
+                                    <div class="overlay">
+                                        <div class="signature">
+                                            <img src="./assets/img/hero_signature.png" alt="">
+                                        </div>
+                                        <h6>
+                                            Mgr. Juraj Vido
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="third-col  align-self-start">
+                                <div class="team-member">
+                                    <img src="./assets/img/Peter Kusý.png" alt="">
+                                    <div class="overlay">
+                                        <div class="signature">
+                                            <img src="./assets/img/hero_signature.png" alt="">
+                                        </div>
+                                        <h6>
+                                            PhDr. Peter Kusý, PhD.
+                                        </h6>
+                                    </div>
+
+                                </div>
+                                <div class="team-member">
+                                    <img src="./assets/img/András Petőcz.png" alt="">
+                                    <div class="overlay">
+                                        <div class="signature">
+                                            <img src="./assets/img/hero_signature.png" alt="">
+                                        </div>
+                                        <h6>
+                                            András Petőcz
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="articles section-padding">
+            <div class="container">
+                <div class="section-title-1 with-vector">
+                    <h2>Headmap magazine</h2>
+                    <h6>See the latest articles from the World of Psychology</h6>
+                </div>
+                <div class="btn-section text-center mt-4">
+                    <a href="#">
+                        <button class="btn btn-primary">Discover all articles</button>
+                    </a>
+                </div>
+                <div class="blogs-container">
+                    <div class="row">
+                        <div class="article-item col-md-6">
+                            <div class="article-inner">
+                                <div class="d-flex">
+                                    <div class="left">
+                                        <figure>
+                                            <img src="./assets/img/blog-1.png" alt="When is it worth hiring
+                                            external recruits">
+                                        </figure>
+                                    </div>
+                                    <div class="right align-self-center px-4">
+                                        <div class="category">
+                                            <a href="#"><i class="fa-solid fa-briefcase"></i> Work psychology </a>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="#">When is it worth hiring
+                                                external recruits</a>
+                                        </h3>
+                                        <div class="article-meta d-flex align-items-center">
+                                            <img src="./assets/img/author-1.png" alt="Author 1"> <span>. 01 SEP 2025
+                                            </span>
+                                        </div>
+                                        <div class="read-btn">
+                                            <a href="#">Read the article <svg class="read-more-btn" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 6.84175L4.43698 8.32323C5.96975 8.83502 7.15294 10.0202 7.66387 11.5556L9.14286 16L16 0L0.0268842 6.86869L0 6.84175Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-item col-md-6">
+                            <div class="article-inner">
+                                <div class="d-flex">
+                                    <div class="left">
+                                        <figure>
+                                            <img src="./assets/img/blog-1.png" alt="When is it worth hiring
+                                            external recruits">
+                                        </figure>
+                                    </div>
+                                    <div class="right align-self-center px-4">
+                                        <div class="category">
+                                            <a href="#"><i class="fa-solid fa-briefcase"></i> Work psychology </a>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="#">When is it worth hiring
+                                                external recruits</a>
+                                        </h3>
+                                        <div class="article-meta d-flex align-items-center">
+                                            <img src="./assets/img/author-1.png" alt="Author 1"> <span>. 01 SEP 2025
+                                            </span>
+                                        </div>
+                                        <div class="read-btn">
+                                            <a href="#">Read the article <svg class="read-more-btn" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 6.84175L4.43698 8.32323C5.96975 8.83502 7.15294 10.0202 7.66387 11.5556L9.14286 16L16 0L0.0268842 6.86869L0 6.84175Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-item col-md-6">
+                            <div class="article-inner">
+                                <div class="d-flex">
+                                    <div class="left">
+                                        <figure>
+                                            <img src="./assets/img/blog-1.png" alt="When is it worth hiring
+                                            external recruits">
+                                        </figure>
+                                    </div>
+                                    <div class="right align-self-center px-4">
+                                        <div class="category">
+                                            <a href="#"><i class="fa-solid fa-briefcase"></i> Work psychology </a>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="#">When is it worth hiring
+                                                external recruits</a>
+                                        </h3>
+                                        <div class="article-meta d-flex align-items-center">
+                                            <img src="./assets/img/author-1.png" alt="Author 1"> <span>. 01 SEP 2025
+                                            </span>
+                                        </div>
+                                        <div class="read-btn">
+                                            <a href="#">Read the article <svg class="read-more-btn" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 6.84175L4.43698 8.32323C5.96975 8.83502 7.15294 10.0202 7.66387 11.5556L9.14286 16L16 0L0.0268842 6.86869L0 6.84175Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-item col-md-6">
+                            <div class="article-inner">
+                                <div class="d-flex">
+                                    <div class="left">
+                                        <figure>
+                                            <img src="./assets/img/blog-1.png" alt="When is it worth hiring
+                                            external recruits">
+                                        </figure>
+                                    </div>
+                                    <div class="right align-self-center px-4">
+                                        <div class="category">
+                                            <a href="#"><i class="fa-solid fa-briefcase"></i> Work psychology </a>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="#">When is it worth hiring
+                                                external recruits</a>
+                                        </h3>
+                                        <div class="article-meta d-flex align-items-center">
+                                            <img src="./assets/img/author-1.png" alt="Author 1"> <span>. 01 SEP 2025
+                                            </span>
+                                        </div>
+                                        <div class="read-btn">
+                                            <a href="#">Read the article <svg class="read-more-btn" width="16"
+                                                    height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 6.84175L4.43698 8.32323C5.96975 8.83502 7.15294 10.0202 7.66387 11.5556L9.14286 16L16 0L0.0268842 6.86869L0 6.84175Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for-individual section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="w-80">
+                            <div class="title-and-icon d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="135" height="135" viewBox="0 0 120 120"
+                                    fill="none">
+                                    <path
+                                        d="M63.1579 113.684V91.579H56.8421V113.684H44.2105C23.3684 113.684 6.31579 96.6316 6.31579 75.7895V6.31579H25.2632C39.3684 6.31579 51.3685 15.5789 55.3685 28.4211H63.1579V6.31579H113.684V113.684H63.1579ZM56.8421 16.8421C54.1053 12.6316 50.5264 9.05263 46.1053 6.31579H56.8421V16.8421ZM6.31579 98.5263C10.1053 104.632 15.1579 109.895 21.4737 113.684H6.31579V98.5263ZM63.1579 120H120V0H0V75.7895V120H44.2105H63.1579Z"
+                                        fill="#F7EACF" />
+                                    <path
+                                        d="M41.25 73.75C41.25 68.2272 45.7272 63.75 51.25 63.75H68.75C74.2729 63.75 78.75 68.2272 78.75 73.75V77.5C78.75 80.2614 76.5114 82.5 73.75 82.5H46.25C43.4886 82.5 41.25 80.2614 41.25 77.5V73.75Z"
+                                        fill="#F7EACF" />
+                                    <circle cx="60" cy="45" r="7.5" fill="#F7EACF" />
+                                </svg>
+                                <h3>Psychology
+                                    for individuals</h3>
+                            </div>
+                            <div class="description">
+                                <p>Each company, every HR department and every recruiter, internal or external <br>
+                                    He knows that processes around Hiring ...
+                                </p>
+                            </div>
+                            <div class="large-button">
+                                <a href="#" class="large-white-btn">
+                                    <button class="btn ">
+                                        Consultation with a psychologist
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_1_848)">
+                                                <path
+                                                    d="M8.625 0C10.0734 0 11.25 1.17656 11.25 2.625V21.375C11.25 22.8234 10.0734 24 8.625 24C7.27031 24 6.15469 22.9734 6.01406 21.6516C5.77031 21.7172 5.5125 21.75 5.25 21.75C3.59531 21.75 2.25 20.4047 2.25 18.75C2.25 18.4031 2.31094 18.0656 2.41875 17.7562C1.00312 17.2219 0 15.8531 0 14.25C0 12.7547 0.876562 11.4609 2.14687 10.8609C1.73906 10.35 1.5 9.70312 1.5 9C1.5 7.56094 2.5125 6.36094 3.8625 6.06562C3.7875 5.80781 3.75 5.53125 3.75 5.25C3.75 3.84844 4.71563 2.66719 6.01406 2.33906C6.15469 1.02656 7.27031 0 8.625 0ZM15.375 0C16.7297 0 17.8406 1.02656 17.9859 2.33906C19.2891 2.66719 20.25 3.84375 20.25 5.25C20.25 5.53125 20.2125 5.80781 20.1375 6.06562C21.4875 6.35625 22.5 7.56094 22.5 9C22.5 9.70312 22.2609 10.35 21.8531 10.8609C23.1234 11.4609 24 12.7547 24 14.25C24 15.8531 22.9969 17.2219 21.5812 17.7562C21.6891 18.0656 21.75 18.4031 21.75 18.75C21.75 20.4047 20.4047 21.75 18.75 21.75C18.4875 21.75 18.2297 21.7172 17.9859 21.6516C17.8453 22.9734 16.7297 24 15.375 24C13.9266 24 12.75 22.8234 12.75 21.375V2.625C12.75 1.17656 13.9266 0 15.375 0Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1_848">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <figure class="image-with-arrow">
+                            <img src="./assets/img/psy-individual.png" alt="Psychology
+                            for individuals">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for-companies section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="w-80">
+                            <div class="title-and-icon d-flex">
+                                <svg width="130" height="130" viewBox="0 0 120 120" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M63.1579 113.684V91.579H56.8421V113.684H44.2105C23.3684 113.684 6.31579 96.6316 6.31579 75.7895V6.31579H25.2632C39.3684 6.31579 51.3685 15.5789 55.3685 28.4211H63.1579V6.31579H113.684V113.684H63.1579ZM56.8421 16.8421C54.1053 12.6316 50.5264 9.05263 46.1053 6.31579H56.8421V16.8421ZM6.31579 98.5263C10.1053 104.632 15.1579 109.895 21.4737 113.684H6.31579V98.5263ZM63.1579 120H120V0H0V75.7895V120H44.2105H63.1579Z"
+                                        fill="#55253B" />
+                                    <g clip-path="url(#clip0_61_85)">
+                                        <path
+                                            d="M45.9375 33.75C43.3496 33.75 41.25 35.9546 41.25 38.6719V81.3281C41.25 84.0454 43.3496 86.25 45.9375 86.25H55.3125V78.0469C55.3125 75.3296 57.4121 73.125 60 73.125C62.5879 73.125 64.6875 75.3296 64.6875 78.0469V86.25H74.0625C76.6504 86.25 78.75 84.0454 78.75 81.3281V38.6719C78.75 35.9546 76.6504 33.75 74.0625 33.75H45.9375ZM47.5 58.3594C47.5 57.457 48.2031 56.7188 49.0625 56.7188H52.1875C53.0469 56.7188 53.75 57.457 53.75 58.3594V61.6406C53.75 62.543 53.0469 63.2813 52.1875 63.2813H49.0625C48.2031 63.2813 47.5 62.543 47.5 61.6406V58.3594ZM58.4375 56.7188H61.5625C62.4219 56.7188 63.125 57.457 63.125 58.3594V61.6406C63.125 62.543 62.4219 63.2813 61.5625 63.2813H58.4375C57.5781 63.2813 56.875 62.543 56.875 61.6406V58.3594C56.875 57.457 57.5781 56.7188 58.4375 56.7188ZM66.25 58.3594C66.25 57.457 66.9531 56.7188 67.8125 56.7188H70.9375C71.7969 56.7188 72.5 57.457 72.5 58.3594V61.6406C72.5 62.543 71.7969 63.2813 70.9375 63.2813H67.8125C66.9531 63.2813 66.25 62.543 66.25 61.6406V58.3594ZM49.0625 43.5938H52.1875C53.0469 43.5938 53.75 44.332 53.75 45.2344V48.5156C53.75 49.418 53.0469 50.1563 52.1875 50.1563H49.0625C48.2031 50.1563 47.5 49.418 47.5 48.5156V45.2344C47.5 44.332 48.2031 43.5938 49.0625 43.5938ZM56.875 45.2344C56.875 44.332 57.5781 43.5938 58.4375 43.5938H61.5625C62.4219 43.5938 63.125 44.332 63.125 45.2344V48.5156C63.125 49.418 62.4219 50.1563 61.5625 50.1563H58.4375C57.5781 50.1563 56.875 49.418 56.875 48.5156V45.2344ZM67.8125 43.5938H70.9375C71.7969 43.5938 72.5 44.332 72.5 45.2344V48.5156C72.5 49.418 71.7969 50.1563 70.9375 50.1563H67.8125C66.9531 50.1563 66.25 49.418 66.25 48.5156V45.2344C66.25 44.332 66.9531 43.5938 67.8125 43.5938Z"
+                                            fill="#55253B" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_61_85">
+                                            <rect width="37.5" height="52.5" fill="white"
+                                                transform="translate(41.25 33.75)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <h3>Psychology
+                                    for companies</h3>
+                            </div>
+                            <div class="description">
+                                <p>Each company, every HR department and every recruiter, internal or external <br>
+                                    He knows that processes around Hiring ...
+                                </p>
+                            </div>
+                            <div class="large-button">
+                                <a href="#" class="large-white-btn">
+                                    <button class="btn ">
+                                        Recruitment
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M18 2H6C4.34 2 3 3.33 3 4.97V15.88C3 17.52 4.34 18.86 6 18.86H6.76C7.55 18.86 8.32 19.17 8.88 19.73L10.59 21.42C11.37 22.19 12.63 22.19 13.41 21.42L15.12 19.73C15.68 19.17 16.45 18.86 17.24 18.86H18C19.66 18.86 21 17.52 21 15.88V4.97C21 3.33 19.66 2 18 2ZM12 5.55C13.08 5.55 13.95 6.43 13.95 7.5C13.95 8.56 13.11 9.41 12.07 9.45C12.03 9.45 11.97 9.45 11.92 9.45C10.87 9.41 10.04 8.56 10.04 7.5C10.05 6.43 10.92 5.55 12 5.55ZM14.75 14.69C13.24 15.7 10.76 15.7 9.25 14.69C7.92 13.81 7.92 12.35 9.25 11.46C10.77 10.45 13.25 10.45 14.75 11.46C16.08 12.35 16.08 13.8 14.75 14.69Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </button>
+
+                                </a>
+
+                            </div>
+                            <div class="large-button">
+                                <a href="#" class="large-white-btn">
+                                    <button class="btn ">
+                                        Consultation with a psychologist
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M13.19 6H6.79C6.53 6 6.28 6.01 6.04 6.04C3.35 6.27 2 7.86 2 10.79V14.79C2 18.79 3.6 19.58 6.79 19.58H7.19C7.41 19.58 7.7 19.73 7.83 19.9L9.03 21.5C9.56 22.21 10.42 22.21 10.95 21.5L12.15 19.9C12.3 19.7 12.54 19.58 12.79 19.58H13.19C16.12 19.58 17.71 18.24 17.94 15.54C17.97 15.3 17.98 15.05 17.98 14.79V10.79C17.98 7.6 16.38 6 13.19 6ZM6.5 14C5.94 14 5.5 13.55 5.5 13C5.5 12.45 5.95 12 6.5 12C7.05 12 7.5 12.45 7.5 13C7.5 13.55 7.05 14 6.5 14ZM9.99 14C9.43 14 8.99 13.55 8.99 13C8.99 12.45 9.44 12 9.99 12C10.54 12 10.99 12.45 10.99 13C10.99 13.55 10.55 14 9.99 14ZM13.49 14C12.93 14 12.49 13.55 12.49 13C12.49 12.45 12.94 12 13.49 12C14.04 12 14.49 12.45 14.49 13C14.49 13.55 14.04 14 13.49 14Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M21.98 6.79V10.79C21.98 12.79 21.36 14.15 20.12 14.9C19.82 15.08 19.47 14.84 19.47 14.49L19.48 10.79C19.48 6.79 17.19 4.5 13.19 4.5L7.1 4.51C6.75 4.51 6.51 4.16 6.69 3.86C7.44 2.62 8.8 2 10.79 2H17.19C20.38 2 21.98 3.6 21.98 6.79Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </button>
+
+                                </a>
+
+                            </div>
+                            <div class="large-button">
+                                <a href="#" class="large-white-btn">
+                                    <button class="btn ">
+                                        Webinars and seminars
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M16.83 15.6399C17.5 15.1999 18.38 15.6799 18.38 16.4799V17.7699C18.38 19.0399 17.39 20.3999 16.2 20.7999L13.01 21.8599C12.45 22.0499 11.54 22.0499 10.99 21.8599L7.8 20.7999C6.6 20.3999 5.62 19.0399 5.62 17.7699V16.4699C5.62 15.6799 6.5 15.1999 7.16 15.6299L9.22 16.9699C10.01 17.4999 11.01 17.7599 12.01 17.7599C13.01 17.7599 14.01 17.4999 14.8 16.9699L16.83 15.6399Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M19.98 6.46006L13.99 2.53006C12.91 1.82006 11.13 1.82006 10.05 2.53006L4.03002 6.46006C2.10002 7.71006 2.10002 10.5401 4.03002 11.8001L5.63002 12.8401L10.05 15.7201C11.13 16.4301 12.91 16.4301 13.99 15.7201L18.38 12.8401L19.75 11.9401V15.0001C19.75 15.4101 20.09 15.7501 20.5 15.7501C20.91 15.7501 21.25 15.4101 21.25 15.0001V10.0801C21.65 8.79006 21.24 7.29006 19.98 6.46006Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </button>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <figure class="image-with-arrow" style="border-color: var(--secondary);">
+                            <img src="./assets/img/psy-companies.png" alt="Psychology
+                            for individuals">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="container">
+                <div class="title-and-arrows">
+                    <div class="d-flex justify-content-between">
+                        <h2>They trust us big <br> tags but also startups</h2>
+
+                        <div class="arrows">
+                            <div class="d-flex">
+                                <button class="carousel-button prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button class="carousel-button next"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="testimonial-card">
+                                <img src="./assets/img/Markiza.png" alt="Markíza" class="company-logo">
+                                <p class="testimonial-text">
+                                    "Our company's headmap services help to complement the source of passive candidates
+                                    for
+                                    selected positions and we can boast of successful cooperation in several demanding
+                                    positions."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="./assets/img/Martina-Vlkovicova-170x170.png" alt="Martina Vlkovičová"
+                                        class="author-avatar">
+                                    <div class="author-info">
+                                        <div class="author-name">Martina Vlkovičová</div>
+                                        <div class="author-title">TV Markiza, Director of the Center of Human Resources
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="testimonial-card">
+                                <img src="./assets/img/Lutra.png" alt="Lutra" class="company-logo">
+                                <p class="testimonial-text">
+                                    "Working psychologists from HeadMAP are greatly connected to business talents.
+                                    Lutrie
+                                    helped several times with recruitment workers who are not only highly motivated, but
+                                    also great fit to the rest of the team."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="./assets/img/Saber-Razmjooei-170x170.png" alt="Saber Razmjooel"
+                                        class="author-avatar">
+                                    <div class="author-info">
+                                        <div class="author-name">Saber Razmjooel</div>
+                                        <div class="author-title">Lutra consulting CEO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="testimonial-card">
+                                <img src="./assets/img/Bloomberg.png" alt="Lutra" class="company-logo">
+                                <p class="testimonial-text">
+                                    "Our company's headmap services help to complement the source of passive candidates
+                                    for selected positions and we can boast of successful cooperation in several
+                                    demanding positions."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="./assets/img/Peter Kusý.png" alt="Saber Razmjooel" class="author-avatar">
+                                    <div class="author-info">
+                                        <div class="author-name">Saber Razmjooel</div>
+                                        <div class="author-title">Lutra consulting CEO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="top-footer pt-5">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="left">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/img/headmap_logo.png" alt="Logo">
+                            </a>
+                        </figure>
+                        <a class="bold-color" href="mailto:Office@myheadmap.com">
+                            <i class="fa-solid fa-envelope"></i> Office@myheadmap.com
+                        </a>
+                        <div class="headmap-details pt-5">
+                            <p>
+                                IČO: 54353017 </br>
+                                DIČ: 2121652115IČ DPH: SK2121652115</br>
+                                Zastúpený: Mgr. Juraj Petrík, PhD.</br>
+                                Registrácia: Okresný súd Nitra, oddiel: Sro, Vložka číslo: 56478/N </br>
+                                Bankové spojenie: Fio banka, a.s.</br>
+                                IBAN: SK 76833 000 0000 210211 7153</br>
+                                Sme platcami DPH</p>
+                        </div>
+                    </div>
+                    <div class="right-links">
+                        <div class="d-flex justify-content-between">
+                            <div class="link-section">
+                                <a href="#" class="bold-color">
+                                    <h3>Magazine</h3>
+                                </a>
+                            </div>
+                            <div class="link-section">
+                                <h3>For Individuals</h3>
+                                <ul>
+                                    <li><a href="#">Consultation with a psychologist</a></li>
+                                </ul>
+                            </div>
+                            <div class="link-section">
+                                <h3>For companies</h3>
+                                <ul>
+                                    <li><a href="#">Recruitment</a></li>
+                                    <li><a href="#">Consultation with a psychologist</a></li>
+                                    <li><a href="#">Webinars and seminars</a></li>
+                                </ul>
+                            </div>
+                            <div class="link-section">
+                                <h3>Headmap</h3>
+                                <ul>
+                                    <li><a href="#">Our team</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="title-and-newsletter d-flex justify-content-between">
+                            <div class="title">
+                                <h3>
+                                    Odoberajte zaujímavé novinky </br>
+                                    zo sveta psychológie
+                                </h3>
+                            </div>
+                            <div class="newsletter">
+                                <div>
+                                    <h3>Newsletter goes here</h3>
+                                </div>
+                                <p>Prihlásením sa na odber noviniek súhlasíte s našimi </br>
+                                    Obchodnými podmienkami a Podmienkami ochrany súkromia</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Licensing</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        //mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            // Toggle the 'active' class on the menu
+            var mainMenu = document.querySelector('#main-menu');
+            mainMenu.classList.toggle('active');
+
+            // Toggle between 'fa-search' and 'fa-times' icons
+            var menuToggleIcon =   document.getElementById('menu-toggle-icon');
+            menuToggleIcon.classList.toggle('fa-bars');
+            menuToggleIcon.classList.toggle('fa-times');
+        });
+
+        // Search
+        document.getElementById('search').addEventListener('click', function () {
+            // Toggle the 'active' class on the search form
+            var searchForm = document.querySelector('.search-form');
+            searchForm.classList.toggle('active');
+
+            // Toggle between 'fa-search' and 'fa-times' icons
+            var searchIcon = document.getElementById('search');
+            searchIcon.classList.toggle('fa-search');
+            searchIcon.classList.toggle('fa-times');
+        });
+
+        // Carousel
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        // Calculate the width of one slide (35% of container)
+        const slideWidth = 45;
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        // Clone the first few slides and append them to the end
+        const clonedSlides = Array.from(slides)
+            .slice(0, Math.ceil(totalSlides / 2))
+            .map(slide => slide.cloneNode(true));
+
+        clonedSlides.forEach(slide => track.appendChild(slide));
+
+        function updateCarousel(direction = 1) {
+            // Move to the next position
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+
+            // Calculate the transform value
+            let transformValue = -(currentIndex * slideWidth);
+
+            // Apply smooth transition
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(${transformValue}%)`;
+
+            // Check if we need to jump to the corresponding clone
+            if (direction > 0 && currentIndex === totalSlides - 1) {
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    currentIndex = 0;
+                    track.style.transform = `translateX(0%)`;
+                }, 500);
+            } else if (direction < 0 && currentIndex === 0) {
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    currentIndex = totalSlides - 1;
+                    track.style.transform = `translateX(-${(totalSlides - 1) * slideWidth}%)`;
+                }, 500);
+            }
+        }
+
+        prevButton.addEventListener('click', () => updateCarousel(-1));
+        nextButton.addEventListener('click', () => updateCarousel(1));
+
+        // Initialize position
+        updateCarousel(0);
+    </script>
+</body>
+
+</html>
