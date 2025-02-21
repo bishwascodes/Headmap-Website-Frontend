@@ -20,7 +20,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="left d-flex align-items-center">
                     <figure>
-                        <a href="#">
+                        <a href="/index.html">
                             <img src="./assets/img/headmap_logo.png" alt="Logo">
                         </a>
                     </figure>
@@ -29,7 +29,7 @@
                     </div>
                     <nav id="main-menu">
                         <ul>
-                            <a href="#">
+                            <a href="/magazine.html">
                                 <li>Headmap Magazine</li>
                             </a>
                             <a href="#">
@@ -473,8 +473,8 @@
 
                         <div class="arrows">
                             <div class="d-flex">
-                                <button class="carousel-button prev"><i class="fa-solid fa-chevron-left"></i></button>
-                                <button class="carousel-button next"><i class="fa-solid fa-chevron-right"></i></button>
+                                <button id="carousel-prev" class="carousel-button prev"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button id="carousel-next" class="carousel-button next"><i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -650,7 +650,7 @@
             mainMenu.classList.toggle('active');
 
             // Toggle between 'fa-search' and 'fa-times' icons
-            var menuToggleIcon =   document.getElementById('menu-toggle-icon');
+            var menuToggleIcon = document.getElementById('menu-toggle-icon');
             menuToggleIcon.classList.toggle('fa-bars');
             menuToggleIcon.classList.toggle('fa-times');
         });
@@ -668,55 +668,17 @@
         });
 
         // Carousel
-        const track = document.querySelector('.carousel-track');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
+        let slider = document.querySelector('.carousel-track');
+        let nextBtn = document.getElementById('carousel-next');
+        let prevBtn = document.getElementById('carousel-prev');
 
-        // Calculate the width of one slide (35% of container)
-        const slideWidth = 45;
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        // Clone the first few slides and append them to the end
-        const clonedSlides = Array.from(slides)
-            .slice(0, Math.ceil(totalSlides / 2))
-            .map(slide => slide.cloneNode(true));
-
-        clonedSlides.forEach(slide => track.appendChild(slide));
-
-        function updateCarousel(direction = 1) {
-            // Move to the next position
-            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-
-            // Calculate the transform value
-            let transformValue = -(currentIndex * slideWidth);
-
-            // Apply smooth transition
-            track.style.transition = 'transform 0.5s ease-in-out';
-            track.style.transform = `translateX(${transformValue}%)`;
-
-            // Check if we need to jump to the corresponding clone
-            if (direction > 0 && currentIndex === totalSlides - 1) {
-                setTimeout(() => {
-                    track.style.transition = 'none';
-                    currentIndex = 0;
-                    track.style.transform = `translateX(0%)`;
-                }, 500);
-            } else if (direction < 0 && currentIndex === 0) {
-                setTimeout(() => {
-                    track.style.transition = 'none';
-                    currentIndex = totalSlides - 1;
-                    track.style.transform = `translateX(-${(totalSlides - 1) * slideWidth}%)`;
-                }, 500);
-            }
+        nextBtn.onclick = () => {
+            slider.append(slider.querySelector('.carousel-slide:first-child'));
         }
 
-        prevButton.addEventListener('click', () => updateCarousel(-1));
-        nextButton.addEventListener('click', () => updateCarousel(1));
-
-        // Initialize position
-        updateCarousel(0);
+        prevBtn.onclick = () => {
+            slider.prepend(slider.querySelector('.carousel-slide:last-child'));
+        }
     </script>
 </body>
 

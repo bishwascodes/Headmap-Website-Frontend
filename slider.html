@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .testimonial-container {
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            transition: transform 0.5s ease-in-out;
+            overflow: hidden;
+         
+        }
+
+        .testimonial {
+            min-width: 40%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .testimonial img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-header h4 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .testimonial-header p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .arrow {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .arrow:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .arrow-left {
+            position: absolute;
+            left: 10px;
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: 10px;
+        }
+/* 
+        Responsive Design
+        @media (max-width: 768px) {
+            .testimonial-container {
+                width: 95%;
+            }
+
+            .testimonial {
+                min-width: 90%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="py-5">
+        <div class="container">
+
+            <div class="testimonial-container">
+
+                <div class="arrows">
+                    <div id="prev" class="arrow arrow-left">❮</div>
+                    <div id="next" class="arrow arrow-right">❯</div>
+                </div>
+
+                <div class="slider">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User">
+                            <div>
+                                <h4>Martina Vlkovičová</h4>
+                                <p>TV Markíza, HR Director</p>
+                            </div>
+                        </div>
+                        <p>“Služby Headmap našej spoločnosti pomáhajú doplniť zdroj pasívnych kandidátov...”</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+                            <div>
+                                <h4>Saber Razmjooel</h4>
+                                <p>Lutra Consulting CEO</p>
+                            </div>
+                        </div>
+                        <p>“Pracovní psychológovia z Headmap sú skvele prepojení na talenty z biznisu...”</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User">
+                            <div>
+                                <h4>John Doe</h4>
+                                <p>Startup Founder</p>
+                            </div>
+                        </div>
+                        <p>“Amazing services! The team at Headmap really understands recruitment needs...”</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        let slider = document.querySelector('.slider');
+        let nextBtn = document.getElementById('next');
+        let prevBtn = document.getElementById('prev');
+
+        nextBtn.onclick = () => {
+            slider.append(slider.querySelector('.testimonial:first-child'));
+        }
+
+        prevBtn.onclick = () => {
+            slider.prepend(slider.querySelector('.testimonial:last-child'));
+        }
+    </script>
+
+</body>
+
+</html>
